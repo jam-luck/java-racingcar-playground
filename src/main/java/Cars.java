@@ -22,4 +22,10 @@ public class Cars {
         }
         return names.toString().substring(0,names.length()-1);
     }
+
+    public void go(){
+        for(Car car : carList){
+            car.go();
+        }
+    }
 }

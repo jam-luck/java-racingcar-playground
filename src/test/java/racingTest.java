@@ -40,4 +40,12 @@ public class racingTest {
         Cars cars = new Cars(carNames);
         assertThat(cars.getCarNames()).isEqualTo(carNames);
     }
+    @Test
+    void 경주() throws customException {
+        String carNames = "a,b,c,d";
+        Cars cars = new Cars(carNames);
+        cars.go();
+        List <Car> carList = cars.getCarList();
+        assertThat(cars.getCarNames()).isEqualTo(carNames);
+    }
 }
