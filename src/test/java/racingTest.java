@@ -21,7 +21,7 @@ public class racingTest {
     }
     @ParameterizedTest
     @MethodSource("nameInputSample")
-    void 이름테스트(String input,Object expect) throws customException {
+    void 이름테스트(String input,Object expect) {
         Car car1 = new Car(input);
         assertThat(car1.getName()).isEqualTo(expect);
     }
@@ -35,13 +35,13 @@ public class racingTest {
     }
 
     @Test
-    void 자동차입력테스트() throws customException {
+    void 자동차입력테스트() {
         String carNames = "a,b,c,d";
         Cars cars = new Cars(carNames);
         assertThat(cars.getCarNames()).isEqualTo(carNames);
     }
     @Test
-    void 경주() throws customException {
+    void 경주() {
         String carNames = "a,b,c,d";
         Cars cars = new Cars(carNames);
         cars.go();

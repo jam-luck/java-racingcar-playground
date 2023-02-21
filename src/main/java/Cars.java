@@ -4,7 +4,7 @@ import java.util.StringTokenizer;
 
 public class Cars {
     private List<Car> carList;
-    public Cars(String carNames) throws customException {
+    public Cars(String carNames)  {
         carList = new ArrayList<>();
         StringTokenizer st = new StringTokenizer(carNames,",");
         while(st.hasMoreTokens()){
